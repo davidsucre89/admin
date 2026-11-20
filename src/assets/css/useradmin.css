@@ -1,0 +1,32 @@
+#useradmin-content {
+  min-width: 0;
+}
+
+.users-list-frame,
+.user-form-frame {
+  border: 0;
+  display: block;
+  width: 100%;
+}
+
+.users-list-frame {
+  height: 440px;
+}
+
+.user-form-frame {
+  height: 600px;
+}
+
+.user-modal-dialog {
+  max-width: 720px;
+}
+
+@media (max-width: 575.98px) {
+  .users-list-frame {
+    height: 480px;
+  }
+
+  .user-form-frame {
+    height: 560px;
+  }
+}

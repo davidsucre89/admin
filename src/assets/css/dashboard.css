@@ -1,0 +1,232 @@
+#dashboard {
+  min-width: 0;
+}
+
+.dashboard-card {
+  border: 0;
+  border-radius: 0.85rem;
+  box-shadow: 0 0.25rem 1rem rgb(33 37 41 / 7%);
+}
+
+.dashboard-card-label {
+  color: #6c757d;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-card-value {
+  color: #212529;
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-card-note {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.bar-chart {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 2rem minmax(0, 1fr);
+}
+
+.bar-chart-scale {
+  color: #6c757d;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  justify-content: space-between;
+  padding-bottom: 1.3rem;
+  text-align: right;
+}
+
+.bar-chart-plot {
+  background: repeating-linear-gradient(
+    to top,
+    #e9ecef 0,
+    #e9ecef 1px,
+    transparent 1px,
+    transparent 25%
+  );
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  height: 220px;
+  min-width: 0;
+}
+
+.bar-chart-month {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.bar-chart-bars {
+  align-items: flex-end;
+  display: flex;
+  flex: 1;
+  gap: 4px;
+  justify-content: center;
+  padding: 0 0.1rem;
+  width: 100%;
+}
+
+.bar {
+  border-radius: 0.25rem 0.25rem 0 0;
+  display: block;
+  max-width: 18px;
+  min-height: 2px;
+  width: 34%;
+}
+
+.bar--in {
+  background-color: #0d6efd;
+}
+
+.bar--out {
+  background-color: #20c997;
+}
+
+.bar-chart-bars--jan .bar--in { height: 55%; }
+.bar-chart-bars--jan .bar--out { height: 44%; }
+.bar-chart-bars--feb .bar--in { height: 63%; }
+.bar-chart-bars--feb .bar--out { height: 49%; }
+.bar-chart-bars--mar .bar--in { height: 71%; }
+.bar-chart-bars--mar .bar--out { height: 59%; }
+.bar-chart-bars--apr .bar--in { height: 68%; }
+.bar-chart-bars--apr .bar--out { height: 53%; }
+.bar-chart-bars--may .bar--in { height: 82%; }
+.bar-chart-bars--may .bar--out { height: 67%; }
+.bar-chart-bars--jun .bar--in { height: 93%; }
+.bar-chart-bars--jun .bar--out { height: 75%; }
+
+.bar-chart-label {
+  color: #6c757d;
+  font-size: 0.72rem;
+  line-height: 1.3rem;
+}
+
+.chart-legend {
+  color: #495057;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+
+.chart-legend > span,
+.donut-legend li > span {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.45rem;
+}
+
+.legend-dot {
+  background-color: #6c757d;
+  border-radius: 50%;
+  display: inline-block;
+  flex: 0 0 0.65rem;
+  height: 0.65rem;
+  width: 0.65rem;
+}
+
+.legend-dot--in,
+.legend-dot--blue {
+  background-color: #0d6efd;
+}
+
+.legend-dot--out,
+.legend-dot--green {
+  background-color: #20c997;
+}
+
+.legend-dot--yellow {
+  background-color: #ffc107;
+}
+
+.legend-dot--gray {
+  background-color: #6c757d;
+}
+
+.legend-dot--red {
+  background-color: #dc3545;
+}
+
+.donut-chart {
+  align-items: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  max-width: 164px;
+  position: relative;
+  width: 100%;
+}
+
+.donut-chart::before {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  inset: 23%;
+  position: absolute;
+}
+
+.donut-chart--categories {
+  background: conic-gradient(
+    #0d6efd 0 42%,
+    #20c997 42% 69%,
+    #ffc107 69% 87%,
+    #6c757d 87% 100%
+  );
+}
+
+.donut-chart--stock {
+  background: conic-gradient(
+    #20c997 0 68%,
+    #ffc107 68% 89%,
+    #dc3545 89% 100%
+  );
+}
+
+.donut-chart-center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  position: relative;
+  text-align: center;
+}
+
+.donut-chart-center strong {
+  color: #212529;
+  font-size: 1.2rem;
+}
+
+.donut-chart-center span {
+  color: #6c757d;
+  font-size: 0.7rem;
+}
+
+.donut-legend {
+  color: #495057;
+  font-size: 0.78rem;
+}
+
+.donut-legend li {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.45rem;
+}
+
+@media (max-width: 575.98px) {
+  #dashboard {
+    padding: 1rem !important;
+  }
+}

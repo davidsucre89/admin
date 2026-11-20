@@ -1,0 +1,46 @@
+body {
+  background-color: #fff;
+}
+
+.user-list-page {
+  padding: 1rem;
+}
+
+.user-table {
+  min-width: 1020px;
+}
+
+.user-table th {
+  white-space: nowrap;
+}
+
+.user-table td {
+  white-space: nowrap;
+}
+
+.user-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  min-width: 300px;
+}
+
+.user-action-button {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  justify-content: center;
+  line-height: 1;
+  min-width: 62px;
+  padding: 0.35rem 0.4rem;
+  white-space: nowrap;
+}
+
+.user-action-button span {
+  font-size: 0.65rem;
+}
+
+.user-action-button .bi {
+  font-size: 1rem;
+}

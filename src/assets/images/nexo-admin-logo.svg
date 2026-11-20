@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-labelledby="title">
+  <title id="title">Nexo Admin</title>
+  <rect width="40" height="40" rx="11" fill="#0D6EFD"/>
+  <path d="M11 28V12H15L25 22V12H29V28H25L15 18V28H11Z" fill="#FFFFFF"/>
+</svg>
